@@ -1,0 +1,26 @@
+{
+	"name": "ds_github",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "github",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"p_fileName": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": {
+					"value": "GundarapuNarasimhaSaiPraveenChowdary/Uber-end-to-end-de-project/refs/heads/main/Data/@{dataset().p_fileName}",
+					"type": "Expression"
+				}
+			}
+		},
+		"schema": {}
+	}
+}
