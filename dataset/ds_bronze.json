@@ -1,0 +1,28 @@
+{
+	"name": "ds_bronze",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "adlsgen2",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"p_fileNamw": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@{dataset().p_fileNamw}.json",
+					"type": "Expression"
+				},
+				"folderPath": "ingestion",
+				"fileSystem": "raw"
+			}
+		},
+		"schema": {}
+	}
+}
