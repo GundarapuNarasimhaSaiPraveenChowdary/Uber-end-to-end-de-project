@@ -1,0 +1,9 @@
+{
+	"name": "spguberdf",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "be5e1b5c-5d00-4d5e-8799-d6303c305442",
+		"tenantId": "3979979e-a084-447a-b08e-fc5ae254e167"
+	}
+}
